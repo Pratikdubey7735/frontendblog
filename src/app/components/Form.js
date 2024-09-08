@@ -9,7 +9,7 @@ export default function Form() {
     e.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:4000/api/create', {
+      const response = await fetch('https://backendblog-fitn.onrender.com/api/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title, content }),
