@@ -10,7 +10,7 @@ export default function ViewPost({ params }) {
   useEffect(() => {
     const get = async () => {
       if (id) {
-        await fetch(`http://localhost:4000/api/id`, {
+        await fetch(`https://backendblog-fitn.onrender.com/api/id`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
