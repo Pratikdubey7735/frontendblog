@@ -7,7 +7,7 @@ export default function Home() {
   const [posts, setPosts] = useState([]);
   const [click,setClick]=useState(false)
   useEffect(() => {
-    fetch('http://localhost:4000/post')
+    fetch('https://backendblog-fitn.onrender.com/post')
       .then(res => res.json())
       .then(data => setPosts(data.data));
   }, [click]);
