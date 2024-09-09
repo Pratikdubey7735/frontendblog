@@ -7,12 +7,13 @@ export default function Home() {
   const [posts, setPosts] = useState([]);
   const [click,setClick]=useState(false)
   useEffect(() => {
-    const get= async()=>{
+    const get= async ()=>{
 
       await fetch('https://backendblog-chi.vercel.app/post')
         .then(res => res.json())
-        .then(data => setPosts(data.data));
-
+        .then(data => setPosts(data.data))
+        .catch((error)=>console.log(error)
+        )
 
     }
     get()
