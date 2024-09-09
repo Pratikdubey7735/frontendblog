@@ -38,7 +38,7 @@ export default function ViewPost({ params }) {
 
   const handleUpdate = async () => {
     if (editablePost) {
-      await fetch(`https://backendblog-fitn.onrender.com/api/update`, {
+      await fetch(`https://backendblog-chi.vercel.app/api/update`, {
         method: 'POST', // Ensure the method matches your backend setup
         headers: {
           'Content-Type': 'application/json',

@@ -12,7 +12,7 @@ export default function BlogCard({ post, setClick }) {
     }
 
     try {
-      const response = await fetch(`https://backendblogsec.vercel.app/api/delete`, {
+      const response = await fetch(`https://backendblog-chi.vercel.app/api/delete`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id: post._id }),
