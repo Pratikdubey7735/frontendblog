@@ -7,9 +7,15 @@ export default function Home() {
   const [posts, setPosts] = useState([]);
   const [click,setClick]=useState(false)
   useEffect(() => {
-    fetch('https://backendblog-fitn.onrender.com/post')
-      .then(res => res.json())
-      .then(data => setPosts(data.data));
+    const get= async()=>{
+
+      await fetch('https://backendblog-fitn.onrender.com/post')
+        .then(res => res.json())
+        .then(data => setPosts(data.data));
+
+
+    }
+    get()
   }, [click]);
 
   console.log("posts",posts)
