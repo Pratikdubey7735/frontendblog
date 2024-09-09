@@ -10,7 +10,7 @@ export default function ViewPost({ params }) {
   useEffect(() => {
     const get = async () => {
       if (id) {
-        await fetch(`https://backendblogsec.vercel.app/api/id`, {
+        await fetch(`https://backendblog-chi.vercel.app/api/id`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

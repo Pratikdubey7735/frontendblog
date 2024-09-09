@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     const get= async()=>{
 
-      await fetch('https://backendblog-fitn.onrender.com/post')
+      await fetch('https://backendblog-chi.vercel.app/post')
         .then(res => res.json())
         .then(data => setPosts(data.data));
 

@@ -9,7 +9,7 @@ export default function Form() {
     e.preventDefault();
   
     try {
-      const response = await fetch('https://backendblogsec.vercel.app/api/create', {
+      const response = await fetch('https://backendblog-chi.vercel.app/api/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title, content }),
